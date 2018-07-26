@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="二维码扫描"
+        android:onClick="openQRCode"/>
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Hello World!"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CreateQRCOde"
+        android:textAllCaps="false"
+        android:onClick="createQRCode"/>
+
+    <CheckBox
+        android:id="@+id/is_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logo"/>
+
+    <ImageView
+        android:id="@+id/iv_QRshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:gravity="center"
+        android:src="@mipmap/ic_launcher"/>
+
+</LinearLayout>
